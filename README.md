@@ -1,7 +1,14 @@
-# extract-json-web
-Extract element from JSON object or valid JSON string by path (using dot-notation). Useful for parsing consent cookie values and other settings without using Custom JS variables (Custom Variable Template for **client-side** Google Tag Manager)
+# Extract From JSON (Web GTM)
 
-## using the variable template
+**Custom Variable Template for Google Tag Manager**
+
+Extract element from JSON object or valid JSON string by path using dot-notation 
+
+[![Template Status](https://img.shields.io/badge/Community%20Template%20Gallery%20Status-published-green)](https://tagmanager.google.com/gallery/#/owners/mbaersch/templates/extract-json-web) ![Repo Size](https://img.shields.io/github/repo-size/mbaersch/extract-json-web) ![License](https://img.shields.io/github/license/mbaersch/extract-json-web)
+
+---
+
+## Usage
 Create a new variable with this template. Choose a variable as input that holds an array or JSON object like a cookie value that contains consent settings. Then define a path to the desired element / property using dot-notation.
 
 The variable will parse the input (if neccessary) and query the defined path. returns the value of the element. If the result is an object, if can be stringified. 
